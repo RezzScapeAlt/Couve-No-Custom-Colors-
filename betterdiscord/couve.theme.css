@@ -1,7 +1,7 @@
 /**
- * @name Old Embed
+ * @name Old Embed + Old Favorite
  * @author RezzScape
- * @description Old Image/Video Embeds
+ * @description Old Image/Video Embed, and puts the favorite button back to its og place.
  * @invite rtBQX5D3bD
  * @version 2.3.0
 */
@@ -33,4 +33,8 @@
 
 [class*="OneGridSingle-"] {
   border-radius: 3px;
+}
+ .imageAccessory-2yA7Kb {
+    left: unset;
+    right: 6px;
 }
