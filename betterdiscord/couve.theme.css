@@ -8,13 +8,33 @@
 
 @import url("https://nyri4.github.io/Couve/betterdiscord/app.css");
 
-/* Settings */
-:root {
-  --version: "2.3.0";
+[class*="ByOneGrid-"]:not([class*="OneGridSingle-"]),
+[class*="ByTwoGrid-"],
+[class*="ByThreeGrid-"] {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
 
-  /* Colors */
-  --main-color: #419e85;
+[class*="ByOneGrid-"]:not([class*="OneGridSingle-"]) [class*="lazyImg"],
+[class*="ByTwoGrid-"] [class*="lazyImg"],
+[class*="ByThreeGrid-"] [class*="lazyImg"] {
+  aspect-ratio: unset;
+  height: auto !important;
+  width: auto !important;
+  margin-left: 0px !important;
+}
 
-  /* Borders */
-  --avatar-radius: 8px;
+[class^="mediaAttachmentsContainer-"] [class*="messageAttachmentMediaMosaic-"] {
+  max-width: fit-content;
+}
+
+[class*="mediaAttachmentsContainer-"] {
+  border-radius: 0px;
+}
+
+[class*="OneGridSingle-"] {
+  border-radius: 3px;
+}
+
 }
